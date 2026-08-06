@@ -6,40 +6,40 @@ const globals = require("globals");
 module.exports = [
   {
     ignores: [
-      "webpack.config.js",
-      "eslint.config.js",
-      ".eslintrc.js",
-      "node_modules/**",
-      "dist/**",
-    ],
+"webpack.config.js",
+"eslint.config.js",
+".eslintrc.js",
+"node_modules/**",
+"dist/**",
+],
   },
-  js.configs.recommended,
+js.configs.recommended,
   {
-    files: ["app.js", "jest.setup.js"],
+    files: ["app.js", "jest.setup.js", "playwright.config.js"],
     languageOptions: {
       ecmaVersion: 2018,
       sourceType: "commonjs",
       globals: {
-        ...globals.node,
+...globals.node,
       },
     },
     rules: {
       indent: ["error", 2],
-      "linebreak-style": ["error", "unix"],
+"linebreak-style": ["error", "unix"],
       quotes: ["error", "single"],
       semi: ["error", "never"],
       eqeqeq: "error",
-      "no-trailing-spaces": "error",
-      "object-curly-spacing": ["error", "always"],
-      "arrow-spacing": ["error", { before: true, after: true }],
-      "no-console": 0,
+"no-trailing-spaces": "error",
+"object-curly-spacing": ["error", "always"],
+"arrow-spacing": ["error", { before: true, after: true }],
+"no-console": 0,
     },
   },
   {
-    files: ["src/**/*.{js,jsx}", "test/**/*.{js,jsx}"],
+    files: ["src/**/*.{js,jsx}", "test/**/*.{js,jsx}", "e2e-tests/**/*.js"],
     plugins: {
-      react,
-      jest,
+react,
+jest,
     },
     languageOptions: {
       ecmaVersion: 2018,
@@ -50,9 +50,9 @@ module.exports = [
         },
       },
       globals: {
-        ...globals.browser,
-        ...globals.es6,
-        ...globals.jest,
+...globals.browser,
+...globals.es6,
+...globals.jest,
       },
     },
     settings: {
@@ -61,17 +61,19 @@ module.exports = [
       },
     },
     rules: {
-      ...react.configs.recommended.rules,
+...react.configs.recommended.rules,
       indent: ["error", 2],
-      "linebreak-style": ["error", "unix"],
+"linebreak-style": ["error", "unix"],
       quotes: ["error", "single"],
       semi: ["error", "never"],
       eqeqeq: "error",
-      "no-trailing-spaces": "error",
-      "object-curly-spacing": ["error", "always"],
-      "arrow-spacing": ["error", { before: true, after: true }],
-      "no-console": "error",
-      "react/prop-types": 0,
+"no-trailing-spaces": "error",
+"object-curly-spacing": ["error", "always"],
+"arrow-spacing": ["error", { before: true, after: true }],
+"no-console": "error",
+"react/prop-types": 0,
     },
   },
 ];
+
+
