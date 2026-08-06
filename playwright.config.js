@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test'
 
 /**
  * Read environment variables from file.
@@ -72,9 +72,9 @@ export default defineConfig({
   ],
 
   webServer: {
-  command: 'npm run build && npm run start-prod',
-  url: 'http://localhost:5001',
-  reuseExistingServer: !process.env.CI,
-},
-});
+    command: 'npm run build && npm run start-prod',
+    url: 'http://localhost:5001',
+    reuseExistingServer: !process.env.CI,
+  },
+})
 
