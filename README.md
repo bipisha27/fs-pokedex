@@ -1,6 +1,6 @@
 # Full Stack open CI/CD
 
-This repository is used for the CI/CD module of the Full Stack Open course
+This repository is used for the CI/CD module of the Full Stack Open course.
 
 ## Commands
 
@@ -14,4 +14,5 @@ Start by running `npm install` inside the project folder
 
 ## Live application
 
-The application is deployed to Fly.io: https://fs-pokedex-airy-wind-1568.fly.dev/
+The application is deployed to Fly.io: https://fs-pokedex-airy-wind-1568.fly.dev/ 
+Do check it out!
