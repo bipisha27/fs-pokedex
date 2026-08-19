@@ -14,5 +14,14 @@ Start by running `npm install` inside the project folder
 
 ## Live application
 
-The application is deployed to Fly.io: https://fs-pokedex-airy-wind-1568.fly.dev/ 
+The application is deployed to Fly.io:
+
+https://fs-pokedex-airy-wind-1568.fly.dev/ 
+
 Do check it out!
+
+## Previous exercise repository
+
+The application repository for the previous two exercises:
+
+https://github.com/bipisha27/bloglist-cicd
