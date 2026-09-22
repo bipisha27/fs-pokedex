@@ -1,24 +1,41 @@
-# Full Stack open CI/CD
+# Full Stack Open CI/CD
 
-This repository is used for the CI/CD module of the Full Stack Open course.
+This repository contains my work for the CI/CD module of the Full Stack Open course by the University of Helsinki.
 
 ## Commands
 
-Start by running `npm install` inside the project folder
+Install the project dependencies:
 
-`npm start` to run the webpack dev server
-`npm test` to run tests
-`npm run eslint` to run eslint
-`npm run build` to make a production build
-`npm run start-prod` to run your production build
+npm install
 
-## Live application
+Run the development server:
 
-The application is deployed to Fly.io: https://fs-pokedex-airy-wind-1568.fly.dev/ 
-Do check it out!
+npm start
 
-## Previous exercise repository
+Run tests:
 
-The application repository from the previous two exercises:
+npm test
+
+Run ESLint:
+
+npm run eslint
+
+Create a production build:
+
+npm run build
+
+Run the production build:
+
+npm run start-prod
+
+## Live Application
+
+The application is deployed to Fly.io:
+
+https://fs-pokedex-airy-wind-1568.fly.dev/
+
+## Previous Exercise Repository
+
+The application repository from the previous exercises:
 
 https://github.com/bipisha27/bloglist-cicd
